@@ -1,0 +1,14 @@
+{
+  "Auth": {
+    "dontHaveAccount": "Don't have an account?",
+    "enterYourEmailBelow": "Enter your email below to {type, select, register {register} login {login to} other {n/a}} your account",
+    "alreadyHaveAccount": "Already have an account?",
+    "createAccount": "Create an account"
+  },
+  "NavBar": {
+    "server": "Server",
+    "client": "Client",
+    "admin": "Admin",
+    "settings": "Config"
+  }
+}

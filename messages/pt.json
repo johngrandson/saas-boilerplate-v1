@@ -1,0 +1,14 @@
+{
+  "Auth": {
+    "dontHaveAccount": "Não tem uma conta ainda?",
+    "enterYourEmailBelow": "Entre com seu email para {type, select, register {registrar} login {fazer login na} other {n/a}} sua conta",
+    "alreadyHaveAccount": "Já tem uma conta?",
+    "createAccount": "Criar conta"
+  },
+  "NavBar": {
+    "server": "Servidor",
+    "client": "Cliente",
+    "admin": "Administrador",
+    "settings": "Configurações"
+  }
+}
