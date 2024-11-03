@@ -26,6 +26,8 @@ import { CardWrapper } from "@/components/auth/card-wrapper";
 import { FormError } from "@/components/form-error";
 import { FormSuccess } from "@/components/form-success";
 import { login } from "@/actions/login";
+import LocaleSwitcher from "@/components/ui/locale-switcher";
+import ThemeSwitcher from "@/components/layout/theme/theme-switcher";
 
 function Login() {
   const t = useTranslations("Auth");
@@ -169,11 +171,18 @@ export default function Component() {
       <div className="md:hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))]" />
       </div>
-      <div className="container relative min-h-screen flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
+      <div className="container relative min-h-screen flex-col items-center justify-between md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
         <div className="relative hidden h-full flex-col bg-muted p-10 text-white lg:flex dark:border-r">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-orange-400 to-red-800" />
           <div className="relative z-20 flex items-center text-lg font-medium">
+          <div className="flex items-center gap-2 px-4">
             <Fingerprint className="mr-2 h-6 w-6" /> Ortofaccia Odontologia
+          </div>
+          <div className="flex items-center gap-2 px-4">
+            <LocaleSwitcher />
+            <div className="separator">|</div>
+            <ThemeSwitcher />
+          </div>
           </div>
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">

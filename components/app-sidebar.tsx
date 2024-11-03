@@ -3,12 +3,12 @@
 import * as React from "react";
 import {
   LifeBuoy,
-  Send,
   Settings2,
   LayoutDashboard,
   MessageCircleQuestion,
   CalendarSearch,
   Fingerprint,
+  Bot,
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
@@ -35,6 +35,11 @@ const data = {
       icon: LayoutDashboard,
     },
     {
+      title: "Manage Agents",
+      url: "/manage-agents",
+      icon: Bot,
+    },
+    {
       title: "Appointments",
       url: "/appointments",
       icon: CalendarSearch,
@@ -44,29 +49,6 @@ const data = {
       url: "/account-settings",
       icon: Settings2,
     },
-    // {
-    //   title: "Settings",
-    //   url: "#",
-    //   icon: Settings2,
-    //   items: [
-    //     {
-    //       title: "General",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Team",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Billing",
-    //       url: "#",
-    //     },
-    //     {
-    //       title: "Limits",
-    //       url: "#",
-    //     },
-    //   ],
-    // },
   ],
   navSecondary: [
     {
